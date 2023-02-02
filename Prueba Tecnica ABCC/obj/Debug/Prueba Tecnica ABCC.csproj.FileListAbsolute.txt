@@ -1,0 +1,10 @@
+C:\Users\ronal\source\repos\Prueba Tecnica ABCC\Prueba Tecnica ABCC\bin\Debug\Prueba Tecnica ABCC.exe.config
+C:\Users\ronal\source\repos\Prueba Tecnica ABCC\Prueba Tecnica ABCC\bin\Debug\Prueba Tecnica ABCC.exe
+C:\Users\ronal\source\repos\Prueba Tecnica ABCC\Prueba Tecnica ABCC\bin\Debug\Prueba Tecnica ABCC.pdb
+C:\Users\ronal\source\repos\Prueba Tecnica ABCC\Prueba Tecnica ABCC\obj\Debug\Prueba_Tecnica_ABCC.Consulta.resources
+C:\Users\ronal\source\repos\Prueba Tecnica ABCC\Prueba Tecnica ABCC\obj\Debug\Prueba_Tecnica_ABCC.Form1.resources
+C:\Users\ronal\source\repos\Prueba Tecnica ABCC\Prueba Tecnica ABCC\obj\Debug\Prueba_Tecnica_ABCC.Properties.Resources.resources
+C:\Users\ronal\source\repos\Prueba Tecnica ABCC\Prueba Tecnica ABCC\obj\Debug\Prueba Tecnica ABCC.csproj.GenerateResource.cache
+C:\Users\ronal\source\repos\Prueba Tecnica ABCC\Prueba Tecnica ABCC\obj\Debug\Prueba Tecnica ABCC.csproj.CoreCompileInputs.cache
+C:\Users\ronal\source\repos\Prueba Tecnica ABCC\Prueba Tecnica ABCC\obj\Debug\Prueba Tecnica ABCC.exe
+C:\Users\ronal\source\repos\Prueba Tecnica ABCC\Prueba Tecnica ABCC\obj\Debug\Prueba Tecnica ABCC.pdb

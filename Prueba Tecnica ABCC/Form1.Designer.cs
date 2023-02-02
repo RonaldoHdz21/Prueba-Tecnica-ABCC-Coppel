@@ -54,6 +54,7 @@ namespace Prueba_Tecnica_ABCC
             this.lbSku = new System.Windows.Forms.Label();
             this.btnOk = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnConsulta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dtpFechaBaja
@@ -303,11 +304,22 @@ namespace Prueba_Tecnica_ABCC
             this.btnEliminar.Visible = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // btnConsulta
+            // 
+            this.btnConsulta.Location = new System.Drawing.Point(132, 339);
+            this.btnConsulta.Name = "btnConsulta";
+            this.btnConsulta.Size = new System.Drawing.Size(75, 23);
+            this.btnConsulta.TabIndex = 50;
+            this.btnConsulta.Text = "Consulta";
+            this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(381, 374);
+            this.Controls.Add(this.btnConsulta);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.dtpFechaBaja);
@@ -367,6 +379,7 @@ namespace Prueba_Tecnica_ABCC
         private System.Windows.Forms.Label lbSku;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnConsulta;
     }
 }
 

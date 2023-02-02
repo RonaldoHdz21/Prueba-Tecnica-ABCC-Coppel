@@ -305,5 +305,24 @@ namespace Prueba_Tecnica_ABCC.Clases
                 return false;
             }
         }
+
+        public DataTable ObtenerListaProductos()
+        {
+            try
+            {
+                Conectar().Open();
+                SqlCommand cmd = new SqlCommand("exec SP_ConsultaListaProductos", Conexion);
+                SqlDataAdapter data = new SqlDataAdapter(cmd);
+                DataTable tabla = new DataTable();
+                data.Fill(tabla);
+
+                return tabla;
+            }
+            catch(Exception exc)
+            {
+                MessageBox.Show("Error: \n\n"+ exc.Message);
+                return null;
+            }
+        }
     }
 }

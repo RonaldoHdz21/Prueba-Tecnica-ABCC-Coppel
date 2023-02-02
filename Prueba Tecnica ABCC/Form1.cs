@@ -216,32 +216,56 @@ namespace Prueba_Tecnica_ABCC
 
         void cargarDepartamentos()
         {
-            cbDepartamento.Items.Clear();
-            List<Departamento> departamentos = consultasBD.getDepartamentos();
-
-            foreach(Departamento d in departamentos)
+            try
             {
-                cbDepartamento.Items.Add(d.Nombre);
+                cbDepartamento.Items.Clear();
+                List<Departamento> departamentos = consultasBD.getDepartamentos();
+
+                foreach (Departamento d in departamentos)
+                {
+                    cbDepartamento.Items.Add(d.Nombre);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: \n\n" + ex.Message);
             }
         }
 
         void cargarClases(string Departamento)
         {
-            List<Clase> clases = consultasBD.getClases(Departamento);
-
-            foreach(Clase clase in clases)
+            try
             {
-                cbClase.Items.Add(clase.Nombre);
+                List<Clase> clases = consultasBD.getClases(Departamento);
+
+
+                foreach (Clase clase in clases)
+                {
+                    cbClase.Items.Add(clase.Nombre);
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: \n\n" + ex.Message);
+            }
+
+
         }
 
         void cargarFamilias(string Departamento, string Clase)
         {
-            List<Familia> familias = consultasBD.getFamilias(Departamento, Clase);
-
-            foreach (Familia familia in familias)
+            try
             {
-                cbFamilia.Items.Add(familia.Nombre);
+                List<Familia> familias = consultasBD.getFamilias(Departamento, Clase);
+
+                foreach (Familia familia in familias)
+                {
+                    cbFamilia.Items.Add(familia.Nombre);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: \n\n"+ex.Message);
             }
         }
 
@@ -333,6 +357,13 @@ namespace Prueba_Tecnica_ABCC
             }
 
             return producto;
+        }
+
+        private void btnConsulta_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            using (Consulta CambiarVentana = new Consulta())
+                CambiarVentana.ShowDialog();
         }
     }
 }
